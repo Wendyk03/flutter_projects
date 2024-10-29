@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:app/Dictionary/dictionary_screen.dart'; // Import the dictionary screen
 import 'package:app/Chatbot/chatbot_screen.dart'; // Import the chatbot screen
 import 'package:app/Screens/home_screen.dart'; // Import the Exam Bank home screen
+import 'package:app/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,8 +15,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'E-Learning',
-      home: HomeScreen(), // Set HomeScreen as the initial screen
+      title: 'Englify',
+      home: const LoginPage(), // Set HomeScreen as the initial screen
       routes: {
         '/dictionary': (context) => const DictionaryHomePage(),
         '/chatbot': (context) => ChatbotScreen(),
